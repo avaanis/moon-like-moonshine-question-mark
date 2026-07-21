@@ -55,8 +55,25 @@ speed:2+Math.random()*2
 
 
 
-setInterval(spawnStar,800);
+let spawnTimer;
 
+
+startButton.addEventListener("click",()=>{
+
+
+startButton.style.display="none";
+
+
+canvas.style.display="block";
+
+
+gameStarted=true;
+
+
+spawnTimer=setInterval(spawnStar,800);
+
+
+});
 
 
 document.addEventListener("keydown",e=>{
