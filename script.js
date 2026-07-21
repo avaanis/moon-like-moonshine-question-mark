@@ -255,6 +255,9 @@ stars.splice(index,1);
 function complete(){
 
 
+clearInterval(spawnTimer);
+
+
 document.getElementById("message").innerHTML=
 
 `
@@ -273,23 +276,26 @@ ARCHIVE ACCESS GRANTED
 
 
 
-setTimeout(()=>{
+proceedButton.style.display="block";
+
+
+proceedButton.onclick=function(){
 
 
 window.location.href=
 
 "https://avaanis.github.io/Password-required/";
 
-
-},4000);
-
+};
 
 
 }
 
 
-
 function loop(){
+
+
+if(gameStarted){
 
 
 ctx.clearRect(
@@ -312,11 +318,13 @@ drawStars();
 update();
 
 
+}
+
+
 requestAnimationFrame(loop);
 
 
 }
-
 
 
 loop();
