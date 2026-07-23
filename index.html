@@ -4,72 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ORBITAL RECOVERY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="starfield" id="starfield"></div>
 
-<div class="terminal">
+<div class="starfield"></div>
+<div class="vignette"></div>
+<div class="scan-beam"></div>
 
-  <div class="terminal-header">
-    <span class="corner tl"></span>
-    <span class="corner tr"></span>
-    <span class="corner bl"></span>
-    <span class="corner br"></span>
+<div class="box">
 
-    <p class="small">
-      UNION ARCHIVE TERMINAL v3.1
-    </p>
-    <p>
-      &gt; CONNECTION ESTABLISHED
-    </p>
-    <p>
-      &gt; RECOVERY PROTOCOL INITIATED
-    </p>
+<div class="stamp">FILE 01 / 07</div>
 
-    <hr>
+<p class="small">UNION ARCHIVE TERMINAL v3.1</p>
 
-    <h1>ORBITAL RECOVERY</h1>
+<p>&gt; CONNECTION ESTABLISHED</p>
+<p>&gt; RECOVERY PROTOCOL INITIATED</p>
 
-    <p class="red">
-      CLASSIFICATION: THIRD COMM INTERNAL
-    </p>
+<hr>
 
-    <p>
-      A scattered transmission has been detected.
-    </p>
-    <p>
-      19 data fragments are missing from the archive.
-    </p>
-    <p>
-      Recover all fragments to restore final access.
-    </p>
+<h1 class="glitch" data-text="ORBITAL RECOVERY">ORBITAL RECOVERY</h1>
 
-    <hr>
+<p class="red">CLASSIFICATION: THIRD COMM INTERNAL</p>
 
-    <div id="status">
-      DATA CORES RECOVERED:
-      <span id="score">0</span>/19
-    </div>
+<p>
+A scattered transmission has been detected.
+<br>
+19 data fragments are missing from the archive.
+<br>
+Recover all fragments to restore final access.
+</p>
 
-    <button id="start-button">BEGIN MISSION</button>
+<hr>
 
-    <div class="canvas-wrap">
-      <canvas id="game" style="display:none;"></canvas>
-    </div>
+<div id="status">
+DATA CORES RECOVERED: <span id="score">0</span>/19
+</div>
 
-    <button id="proceed-button" style="display:none;">PROCEED</button>
+<button class="button" id="start-button">BEGIN MISSION</button>
 
-    <p class="controls">
-      CONTROLS:
-      <br>
-      &larr; &rarr; OR A/D TO MOVE
-    </p>
+<div class="canvas-wrap">
+<canvas id="game" width="600" height="400" style="display:none;"></canvas>
+</div>
 
-    <div id="message"></div>
-  </div>
+<button class="button" id="proceed-button" style="display:none;">PROCEED</button>
+
+<p class="controls">CONTROLS: &larr; &rarr; OR A/D TO MOVE</p>
+
+<div id="message"></div>
+
+<p class="small" style="margin-top:30px;">
+Standing by<span class="cursor">_</span>
+</p>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
