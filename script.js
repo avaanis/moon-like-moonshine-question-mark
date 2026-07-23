@@ -232,7 +232,7 @@ function complete(){
     cores=[];
 
     messageEl.innerHTML=
-        "RECOVERY COMPLETE<br><br>19/19 DATA CORES RESTORED<br><br>ARCHIVE ACCESS GRANTED";
+        "RECOVERY COMPLETE<br><br>19/19 DATA CORES RESTORED<br><br>ACCESS TO NEXT PUZZLE GRANTED";
 
     proceedButton.style.display="block";
     proceedButton.onclick=function(){
